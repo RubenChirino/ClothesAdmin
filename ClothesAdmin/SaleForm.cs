@@ -32,6 +32,12 @@ namespace ClothesAdmin
             comboBoxClientDNI.AutoCompleteSource = AutoCompleteSource.ListItems;
 
             // Data
+            SetProductOptions();
+            SetClientOptions();
+        }
+
+        public void SetProductOptions() 
+        {
             List<Product> products = ProductController.GetProducts();
             int totalProducts = products.Count;
             string[] productOptions = new string[totalProducts];
@@ -40,7 +46,7 @@ namespace ClothesAdmin
             for (int i = 0; i < totalProducts; i++)
             {
                 Product product = products[i];
-                if (product.IsActive == 1 && product.Stock >= 1) 
+                if (product.IsActive == 1 && product.Stock >= 1)
                 {
                     int id = product.Id;
                     string name = product.Name;
@@ -50,7 +56,10 @@ namespace ClothesAdmin
                 }
             }
             comboBoxProduct.DataSource = productOptions;
+        }
 
+        public void SetClientOptions()
+        {
             List<Client> clients = ClientController.GetClients();
             int totalClients = clients.Count;
             string[] clientOptions = new string[totalClients];
@@ -178,6 +187,9 @@ namespace ClothesAdmin
                     // Reduce Stock form product
                     product.Stock -= 1;
                     ProductController.UpdateProduct(productId, product);
+
+                    // Reload product options
+                    SetProductOptions();
                 }
             }
             catch (Exception ex)

@@ -91,11 +91,11 @@
     <Compile Include="Controllers\DbController.cs" />
     <Compile Include="Controllers\SaleController.cs" />
     <Compile Include="Controllers\UserController.cs" />
-    <Compile Include="Authentication.cs">
+    <Compile Include="AuthenticationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Authentication.Designer.cs">
-      <DependentUpon>Authentication.cs</DependentUpon>
+    <Compile Include="AuthenticationForm.Designer.cs">
+      <DependentUpon>AuthenticationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -121,8 +121,8 @@
     <Compile Include="SaleForm.Designer.cs">
       <DependentUpon>SaleForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Authentication.resx">
-      <DependentUpon>Authentication.cs</DependentUpon>
+    <EmbeddedResource Include="AuthenticationForm.resx">
+      <DependentUpon>AuthenticationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -174,6 +174,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DB.sql" />
+    <None Include="Resources\icons8-logout-30 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

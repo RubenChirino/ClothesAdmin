@@ -54,12 +54,14 @@ namespace ClothesAdmin
             this.newSaleBtn = new System.Windows.Forms.Button();
             this.salesDataGrid = new System.Windows.Forms.DataGridView();
             this.salesLabelTitle = new System.Windows.Forms.Label();
-            this.pictureBoxUser2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxSearchIconSale = new System.Windows.Forms.PictureBox();
-            this.pictureBoxSearchIconProduct = new System.Windows.Forms.PictureBox();
             this.productEditBtn = new System.Windows.Forms.Button();
             this.productDeleteBtn = new System.Windows.Forms.Button();
             this.productActivateBtn = new System.Windows.Forms.Button();
+            this.pictureBoxUser2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSearchIconSale = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSearchIconProduct = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.navbarPanel.SuspendLayout();
             this.productsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataGrid)).BeginInit();
@@ -69,6 +71,7 @@ namespace ClothesAdmin
             this.dataGridPanelSales.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchIconSale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchIconProduct)).BeginInit();
             this.SuspendLayout();
@@ -76,12 +79,14 @@ namespace ClothesAdmin
             // navbarPanel
             // 
             this.navbarPanel.BackColor = System.Drawing.Color.Black;
+            this.navbarPanel.Controls.Add(this.button1);
             this.navbarPanel.Controls.Add(this.UserPanel);
             this.navbarPanel.Controls.Add(this.brandTitle);
             this.navbarPanel.Controls.Add(this.productsBtn);
             this.navbarPanel.Controls.Add(this.productsBtnBorder);
             this.navbarPanel.Controls.Add(this.salesBtn);
             this.navbarPanel.Controls.Add(this.salesBtnBorder);
+            this.navbarPanel.Controls.Add(this.pictureBox1);
             this.navbarPanel.Location = new System.Drawing.Point(0, 0);
             this.navbarPanel.Name = "navbarPanel";
             this.navbarPanel.Size = new System.Drawing.Size(174, 523);
@@ -171,11 +176,11 @@ namespace ClothesAdmin
             this.brandTitle.BackColor = System.Drawing.Color.Transparent;
             this.brandTitle.Font = new System.Drawing.Font("Harlow Solid Italic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.brandTitle.ForeColor = System.Drawing.Color.White;
-            this.brandTitle.Location = new System.Drawing.Point(21, 139);
+            this.brandTitle.Location = new System.Drawing.Point(14, 139);
             this.brandTitle.Name = "brandTitle";
-            this.brandTitle.Size = new System.Drawing.Size(138, 24);
+            this.brandTitle.Size = new System.Drawing.Size(146, 24);
             this.brandTitle.TabIndex = 1;
-            this.brandTitle.Text = "Fashion Foward";
+            this.brandTitle.Text = "Fashion Forward";
             this.brandTitle.Click += new System.EventHandler(this.brandTitle_Click);
             // 
             // productsDataGrid
@@ -375,33 +380,6 @@ namespace ClothesAdmin
             this.salesLabelTitle.TabIndex = 3;
             this.salesLabelTitle.Text = "Sales";
             // 
-            // pictureBoxUser2
-            // 
-            this.pictureBoxUser2.Image = global::ClothesAdmin.Properties.Resources.user_profile_white_32px1;
-            this.pictureBoxUser2.Location = new System.Drawing.Point(36, 16);
-            this.pictureBoxUser2.Name = "pictureBoxUser2";
-            this.pictureBoxUser2.Size = new System.Drawing.Size(30, 30);
-            this.pictureBoxUser2.TabIndex = 7;
-            this.pictureBoxUser2.TabStop = false;
-            // 
-            // pictureBoxSearchIconSale
-            // 
-            this.pictureBoxSearchIconSale.Image = global::ClothesAdmin.Properties.Resources.icons8_search_24;
-            this.pictureBoxSearchIconSale.Location = new System.Drawing.Point(643, 22);
-            this.pictureBoxSearchIconSale.Name = "pictureBoxSearchIconSale";
-            this.pictureBoxSearchIconSale.Size = new System.Drawing.Size(24, 24);
-            this.pictureBoxSearchIconSale.TabIndex = 3;
-            this.pictureBoxSearchIconSale.TabStop = false;
-            // 
-            // pictureBoxSearchIconProduct
-            // 
-            this.pictureBoxSearchIconProduct.Image = global::ClothesAdmin.Properties.Resources.icons8_search_24;
-            this.pictureBoxSearchIconProduct.Location = new System.Drawing.Point(643, 22);
-            this.pictureBoxSearchIconProduct.Name = "pictureBoxSearchIconProduct";
-            this.pictureBoxSearchIconProduct.Size = new System.Drawing.Size(24, 24);
-            this.pictureBoxSearchIconProduct.TabIndex = 3;
-            this.pictureBoxSearchIconProduct.TabStop = false;
-            // 
             // productEditBtn
             // 
             this.productEditBtn.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -450,6 +428,61 @@ namespace ClothesAdmin
             this.productActivateBtn.Visible = false;
             this.productActivateBtn.Click += new System.EventHandler(this.productActivateBtn_Click);
             // 
+            // pictureBoxUser2
+            // 
+            this.pictureBoxUser2.Image = global::ClothesAdmin.Properties.Resources.user_profile_white_32px1;
+            this.pictureBoxUser2.Location = new System.Drawing.Point(36, 16);
+            this.pictureBoxUser2.Name = "pictureBoxUser2";
+            this.pictureBoxUser2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBoxUser2.TabIndex = 7;
+            this.pictureBoxUser2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ClothesAdmin.Properties.Resources.icons8_logout_30__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 463);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBoxSearchIconSale
+            // 
+            this.pictureBoxSearchIconSale.Image = global::ClothesAdmin.Properties.Resources.icons8_search_24;
+            this.pictureBoxSearchIconSale.Location = new System.Drawing.Point(643, 22);
+            this.pictureBoxSearchIconSale.Name = "pictureBoxSearchIconSale";
+            this.pictureBoxSearchIconSale.Size = new System.Drawing.Size(24, 24);
+            this.pictureBoxSearchIconSale.TabIndex = 3;
+            this.pictureBoxSearchIconSale.TabStop = false;
+            // 
+            // pictureBoxSearchIconProduct
+            // 
+            this.pictureBoxSearchIconProduct.Image = global::ClothesAdmin.Properties.Resources.icons8_search_24;
+            this.pictureBoxSearchIconProduct.Location = new System.Drawing.Point(643, 22);
+            this.pictureBoxSearchIconProduct.Name = "pictureBoxSearchIconProduct";
+            this.pictureBoxSearchIconProduct.Size = new System.Drawing.Size(24, 24);
+            this.pictureBoxSearchIconProduct.TabIndex = 3;
+            this.pictureBoxSearchIconProduct.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(48, 460);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 33);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "LogOut";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // MainForm
             // 
             this.BackColor = System.Drawing.Color.White;
@@ -474,6 +507,7 @@ namespace ClothesAdmin
             this.dataGridPanelSales.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchIconSale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchIconProduct)).EndInit();
             this.ResumeLayout(false);
@@ -515,5 +549,7 @@ namespace ClothesAdmin
         private System.Windows.Forms.Button productEditBtn;
         private System.Windows.Forms.Button productDeleteBtn;
         private System.Windows.Forms.Button productActivateBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

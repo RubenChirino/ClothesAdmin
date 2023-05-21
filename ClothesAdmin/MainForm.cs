@@ -242,5 +242,12 @@ namespace ClothesAdmin
                 ProductController.DisplayProduct("SELECT id, name, image, description, stock, price, color, size, categorie, active FROM product", productsDataGrid);
             }
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            new AuthenticationForm().Show();
+            this.Hide();
+            user = null;
+        }
     }
 }

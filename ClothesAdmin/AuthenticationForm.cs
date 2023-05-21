@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace ClothesAdmin
 {
-    public partial class Authentication : Form
+    public partial class AuthenticationForm : Form
     {
-        public Authentication()
+        public AuthenticationForm()
         {
             InitializeComponent();
         }
@@ -38,6 +38,11 @@ namespace ClothesAdmin
         }
 
         private void Authentication_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mainTitleLogIn_Click(object sender, EventArgs e)
         {
 
         }
