@@ -104,6 +104,7 @@
             this.passwordTextBoxLogIn.Size = new System.Drawing.Size(194, 28);
             this.passwordTextBoxLogIn.TabIndex = 2;
             this.passwordTextBoxLogIn.Text = "Password";
+            this.passwordTextBoxLogIn.UseSystemPasswordChar = true;
             // 
             // linePasswordTextBoxLogIn
             // 

@@ -30,10 +30,10 @@ namespace ClothesAdmin
         /// </summary>
         private void InitializeComponent(User user)
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.navbarPanel = new System.Windows.Forms.Panel();
             this.productsBtn = new System.Windows.Forms.Button();
             this.productsBtnBorder = new System.Windows.Forms.Panel();
@@ -48,26 +48,29 @@ namespace ClothesAdmin
             this.UserPanel = new System.Windows.Forms.Panel();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.textBoxSearchProduct = new System.Windows.Forms.TextBox();
-            this.pictureBoxUser2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxSearchIconProduct = new System.Windows.Forms.PictureBox();
             this.salesPanel = new System.Windows.Forms.Panel();
             this.dataGridPanelSales = new System.Windows.Forms.Panel();
             this.textBoxSeachSales = new System.Windows.Forms.TextBox();
-            this.pictureBoxSearchIconSale = new System.Windows.Forms.PictureBox();
             this.newSaleBtn = new System.Windows.Forms.Button();
             this.salesDataGrid = new System.Windows.Forms.DataGridView();
             this.salesLabelTitle = new System.Windows.Forms.Label();
+            this.pictureBoxUser2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSearchIconSale = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSearchIconProduct = new System.Windows.Forms.PictureBox();
+            this.productEditBtn = new System.Windows.Forms.Button();
+            this.productDeleteBtn = new System.Windows.Forms.Button();
+            this.productActivateBtn = new System.Windows.Forms.Button();
             this.navbarPanel.SuspendLayout();
             this.productsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataGrid)).BeginInit();
             this.dataGridPanelProduct.SuspendLayout();
             this.UserPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchIconProduct)).BeginInit();
             this.salesPanel.SuspendLayout();
             this.dataGridPanelSales.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchIconSale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchIconSale)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchIconProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // navbarPanel
@@ -186,23 +189,23 @@ namespace ClothesAdmin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.productsDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.productsDataGrid.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle57.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle57.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle57.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle57.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(174)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle57.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle57.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.productsDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle57;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(174)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productsDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.productsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle58.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle58.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle58.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(174)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.productsDataGrid.DefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(174)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.productsDataGrid.DefaultCellStyle = dataGridViewCellStyle6;
             this.productsDataGrid.GridColor = System.Drawing.Color.White;
             this.productsDataGrid.Location = new System.Drawing.Point(17, 65);
             this.productsDataGrid.Name = "productsDataGrid";
@@ -216,14 +219,18 @@ namespace ClothesAdmin
             // dataGridPanelProduct
             // 
             this.dataGridPanelProduct.BackColor = System.Drawing.Color.White;
+            this.dataGridPanelProduct.Controls.Add(this.newProductBtn);
+            this.dataGridPanelProduct.Controls.Add(this.productEditBtn);
+            this.dataGridPanelProduct.Controls.Add(this.productActivateBtn);
+            this.dataGridPanelProduct.Controls.Add(this.productDeleteBtn);
             this.dataGridPanelProduct.Controls.Add(this.textBoxSearchProduct);
             this.dataGridPanelProduct.Controls.Add(this.pictureBoxSearchIconProduct);
-            this.dataGridPanelProduct.Controls.Add(this.newProductBtn);
             this.dataGridPanelProduct.Controls.Add(this.productsDataGrid);
             this.dataGridPanelProduct.Location = new System.Drawing.Point(26, 74);
             this.dataGridPanelProduct.Name = "dataGridPanelProduct";
             this.dataGridPanelProduct.Size = new System.Drawing.Size(680, 436);
             this.dataGridPanelProduct.TabIndex = 1;
+            this.dataGridPanelProduct.Paint += new System.Windows.Forms.PaintEventHandler(this.dataGridPanelProduct_Paint);
             // 
             // newProductBtn
             // 
@@ -272,24 +279,6 @@ namespace ClothesAdmin
             this.textBoxSearchProduct.TabIndex = 2;
             this.textBoxSearchProduct.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // pictureBoxUser2
-            // 
-            this.pictureBoxUser2.Image = global::ClothesAdmin.Properties.Resources.user_profile_white_32px1;
-            this.pictureBoxUser2.Location = new System.Drawing.Point(36, 16);
-            this.pictureBoxUser2.Name = "pictureBoxUser2";
-            this.pictureBoxUser2.Size = new System.Drawing.Size(30, 30);
-            this.pictureBoxUser2.TabIndex = 7;
-            this.pictureBoxUser2.TabStop = false;
-            // 
-            // pictureBoxSearchIconProduct
-            // 
-            this.pictureBoxSearchIconProduct.Image = global::ClothesAdmin.Properties.Resources.icons8_search_24;
-            this.pictureBoxSearchIconProduct.Location = new System.Drawing.Point(643, 22);
-            this.pictureBoxSearchIconProduct.Name = "pictureBoxSearchIconProduct";
-            this.pictureBoxSearchIconProduct.Size = new System.Drawing.Size(24, 24);
-            this.pictureBoxSearchIconProduct.TabIndex = 3;
-            this.pictureBoxSearchIconProduct.TabStop = false;
-            // 
             // salesPanel
             // 
             this.salesPanel.BackColor = System.Drawing.Color.LightGray;
@@ -304,14 +293,15 @@ namespace ClothesAdmin
             // dataGridPanelSales
             // 
             this.dataGridPanelSales.BackColor = System.Drawing.Color.White;
+            this.dataGridPanelSales.Controls.Add(this.newSaleBtn);
             this.dataGridPanelSales.Controls.Add(this.textBoxSeachSales);
             this.dataGridPanelSales.Controls.Add(this.pictureBoxSearchIconSale);
-            this.dataGridPanelSales.Controls.Add(this.newSaleBtn);
             this.dataGridPanelSales.Controls.Add(this.salesDataGrid);
             this.dataGridPanelSales.Location = new System.Drawing.Point(26, 71);
             this.dataGridPanelSales.Name = "dataGridPanelSales";
             this.dataGridPanelSales.Size = new System.Drawing.Size(680, 436);
             this.dataGridPanelSales.TabIndex = 2;
+            this.dataGridPanelSales.Paint += new System.Windows.Forms.PaintEventHandler(this.dataGridPanelSales_Paint);
             // 
             // textBoxSeachSales
             // 
@@ -321,15 +311,6 @@ namespace ClothesAdmin
             this.textBoxSeachSales.Size = new System.Drawing.Size(136, 25);
             this.textBoxSeachSales.TabIndex = 2;
             this.textBoxSeachSales.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
-            // 
-            // pictureBoxSearchIconSale
-            // 
-            this.pictureBoxSearchIconSale.Image = global::ClothesAdmin.Properties.Resources.icons8_search_24;
-            this.pictureBoxSearchIconSale.Location = new System.Drawing.Point(643, 22);
-            this.pictureBoxSearchIconSale.Name = "pictureBoxSearchIconSale";
-            this.pictureBoxSearchIconSale.Size = new System.Drawing.Size(24, 24);
-            this.pictureBoxSearchIconSale.TabIndex = 3;
-            this.pictureBoxSearchIconSale.TabStop = false;
             // 
             // newSaleBtn
             // 
@@ -357,23 +338,23 @@ namespace ClothesAdmin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.salesDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.salesDataGrid.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle59.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle59.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle59.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(174)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.salesDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle59;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(174)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.salesDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.salesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle60.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle60.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle60.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle60.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(174)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle60.SelectionForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle60.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.salesDataGrid.DefaultCellStyle = dataGridViewCellStyle60;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(174)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.salesDataGrid.DefaultCellStyle = dataGridViewCellStyle8;
             this.salesDataGrid.GridColor = System.Drawing.Color.White;
             this.salesDataGrid.Location = new System.Drawing.Point(17, 65);
             this.salesDataGrid.Name = "salesDataGrid";
@@ -382,6 +363,7 @@ namespace ClothesAdmin
             this.salesDataGrid.ShowEditingIcon = false;
             this.salesDataGrid.Size = new System.Drawing.Size(650, 358);
             this.salesDataGrid.TabIndex = 0;
+            this.salesDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.salesDataGrid_CellContentClick);
             // 
             // salesLabelTitle
             // 
@@ -392,6 +374,81 @@ namespace ClothesAdmin
             this.salesLabelTitle.Size = new System.Drawing.Size(79, 37);
             this.salesLabelTitle.TabIndex = 3;
             this.salesLabelTitle.Text = "Sales";
+            // 
+            // pictureBoxUser2
+            // 
+            this.pictureBoxUser2.Image = global::ClothesAdmin.Properties.Resources.user_profile_white_32px1;
+            this.pictureBoxUser2.Location = new System.Drawing.Point(36, 16);
+            this.pictureBoxUser2.Name = "pictureBoxUser2";
+            this.pictureBoxUser2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBoxUser2.TabIndex = 7;
+            this.pictureBoxUser2.TabStop = false;
+            // 
+            // pictureBoxSearchIconSale
+            // 
+            this.pictureBoxSearchIconSale.Image = global::ClothesAdmin.Properties.Resources.icons8_search_24;
+            this.pictureBoxSearchIconSale.Location = new System.Drawing.Point(643, 22);
+            this.pictureBoxSearchIconSale.Name = "pictureBoxSearchIconSale";
+            this.pictureBoxSearchIconSale.Size = new System.Drawing.Size(24, 24);
+            this.pictureBoxSearchIconSale.TabIndex = 3;
+            this.pictureBoxSearchIconSale.TabStop = false;
+            // 
+            // pictureBoxSearchIconProduct
+            // 
+            this.pictureBoxSearchIconProduct.Image = global::ClothesAdmin.Properties.Resources.icons8_search_24;
+            this.pictureBoxSearchIconProduct.Location = new System.Drawing.Point(643, 22);
+            this.pictureBoxSearchIconProduct.Name = "pictureBoxSearchIconProduct";
+            this.pictureBoxSearchIconProduct.Size = new System.Drawing.Size(24, 24);
+            this.pictureBoxSearchIconProduct.TabIndex = 3;
+            this.pictureBoxSearchIconProduct.TabStop = false;
+            // 
+            // productEditBtn
+            // 
+            this.productEditBtn.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.productEditBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.productEditBtn.FlatAppearance.BorderSize = 0;
+            this.productEditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.productEditBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productEditBtn.Location = new System.Drawing.Point(125, 19);
+            this.productEditBtn.Name = "productEditBtn";
+            this.productEditBtn.Size = new System.Drawing.Size(90, 34);
+            this.productEditBtn.TabIndex = 7;
+            this.productEditBtn.Text = "EDIT";
+            this.productEditBtn.UseVisualStyleBackColor = false;
+            this.productEditBtn.Visible = false;
+            this.productEditBtn.Click += new System.EventHandler(this.productEditBtn_Click);
+            // 
+            // productDeleteBtn
+            // 
+            this.productDeleteBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(69)))), ((int)(((byte)(59)))));
+            this.productDeleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.productDeleteBtn.FlatAppearance.BorderSize = 0;
+            this.productDeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.productDeleteBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productDeleteBtn.Location = new System.Drawing.Point(231, 19);
+            this.productDeleteBtn.Name = "productDeleteBtn";
+            this.productDeleteBtn.Size = new System.Drawing.Size(102, 34);
+            this.productDeleteBtn.TabIndex = 6;
+            this.productDeleteBtn.Text = "DESACTIVATE";
+            this.productDeleteBtn.UseVisualStyleBackColor = false;
+            this.productDeleteBtn.Visible = false;
+            this.productDeleteBtn.Click += new System.EventHandler(this.productDeleteBtn_Click);
+            // 
+            // productActivateBtn
+            // 
+            this.productActivateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(174)))), ((int)(((byte)(17)))));
+            this.productActivateBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.productActivateBtn.FlatAppearance.BorderSize = 0;
+            this.productActivateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.productActivateBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productActivateBtn.Location = new System.Drawing.Point(231, 19);
+            this.productActivateBtn.Name = "productActivateBtn";
+            this.productActivateBtn.Size = new System.Drawing.Size(102, 34);
+            this.productActivateBtn.TabIndex = 8;
+            this.productActivateBtn.Text = "ACTIVATE";
+            this.productActivateBtn.UseVisualStyleBackColor = false;
+            this.productActivateBtn.Visible = false;
+            this.productActivateBtn.Click += new System.EventHandler(this.productActivateBtn_Click);
             // 
             // MainForm
             // 
@@ -411,14 +468,14 @@ namespace ClothesAdmin
             this.dataGridPanelProduct.PerformLayout();
             this.UserPanel.ResumeLayout(false);
             this.UserPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchIconProduct)).EndInit();
             this.salesPanel.ResumeLayout(false);
             this.salesPanel.PerformLayout();
             this.dataGridPanelSales.ResumeLayout(false);
             this.dataGridPanelSales.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchIconSale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchIconSale)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchIconProduct)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -455,5 +512,8 @@ namespace ClothesAdmin
         private System.Windows.Forms.Button newSaleBtn;
         private System.Windows.Forms.DataGridView salesDataGrid;
         private System.Windows.Forms.Label salesLabelTitle;
+        private System.Windows.Forms.Button productEditBtn;
+        private System.Windows.Forms.Button productDeleteBtn;
+        private System.Windows.Forms.Button productActivateBtn;
     }
 }

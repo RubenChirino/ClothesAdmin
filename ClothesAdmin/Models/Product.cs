@@ -5,6 +5,7 @@ namespace ClothesAdmin.Models
 {
     public class Product
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Image { get; set; }
         public string Description { get; set; }
@@ -31,6 +32,23 @@ namespace ClothesAdmin.Models
             elegant,
             formal,
             office
+        }
+
+        public Product(int id, string name,
+            string image, string description, int stock,
+            double price, string color, string size,
+            string categorie, int isActive)
+        {
+            Id = id;
+            Name = name;
+            Image = image;
+            Description = description;
+            Stock = stock;
+            Price = price;
+            Color = color;
+            Size = size;
+            Categorie = categorie;
+            IsActive = isActive;
         }
 
         public Product(string name,

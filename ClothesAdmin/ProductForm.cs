@@ -29,19 +29,33 @@ namespace ClothesAdmin
 
             InitializeComponent();
 
-            if (productId != null)
+            // Data
+            Array sizeOptions = Enum.GetValues(typeof(Product.Sizes));
+            comboBoxSize.DataSource = sizeOptions;
+            Array categorieOptions = Enum.GetValues(typeof(Product.Categories));
+            comboBoxCategorie.DataSource = categorieOptions;
+
+            if (productId >= 0)
             {
                 // Set Product Info
+                Product product = ProductController.GetProductById(ProductId);
+                if (product != null)
+                {
+                    textBoxName.Text = product.Name;
+                    textBoxImageURL.Text = product.Image;
+                    textBoxDescription.Text = product.Description;
+                    numericBoxStock.Value = product.Stock;
+                    numericBoxPrice.Value = (decimal)product.Price;
+                    textBoxColor.Text = product.Color;
+                    comboBoxSize.SelectedItem = product.Size;
+                    comboBoxCategorie.SelectedItem = product.Categorie;
 
+                    title.Text = "Edit Product";
+                }
             }
             else 
             {
-                // Set default Info
-                Array sizeOptions = Enum.GetValues(typeof(Product.Sizes));
-                comboBoxSize.DataSource = sizeOptions;
-
-                Array categorieOptions = Enum.GetValues(typeof(Product.Categories));
-                comboBoxCategorie.DataSource = categorieOptions;
+                title.Text = "New Product";
             }
 
             
@@ -68,76 +82,88 @@ namespace ClothesAdmin
             // Validations
 
             // Name
-            if (textBoxName.Text == null || textBoxName.Text.Length > 0)
+            if (textBoxName.Text == null || textBoxName.Text.Length == 0)
             {
-                MessageBox.Show("You need to add a name to the product! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("You need to add a name to the product! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+                return;
             }
 
             // Description
-            if (textBoxDescription.Text == null || textBoxDescription.Text.Length > 0)
+            if (textBoxDescription.Text == null || textBoxDescription.Text.Length == 0)
             {
                 MessageBox.Show("You need to add a description to the product! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
 
             // Stock
             if (numericBoxStock.Value == null || numericBoxStock.Value == 0)
             {
                 MessageBox.Show("You cannot add a product with stock 0! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
 
             // Price
             if (numericBoxPrice.Value == null || numericBoxPrice.Value == 0)
             {
                 MessageBox.Show("You cannot add a product with price 0! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
 
             // Color
-            if (textBoxColor.Text == null || textBoxColor.Text.Length > 0)
+            if (textBoxColor.Text == null || textBoxColor.Text.Length == 0)
             {
                 MessageBox.Show("You need to add a product with color! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
 
             // Size
             if (comboBoxSize.SelectedValue == null || comboBoxSize.SelectedValue == "") 
             {
                 MessageBox.Show("You need to add a product with size! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
 
             // Categorie
             if (comboBoxCategorie.SelectedValue == null || comboBoxCategorie.SelectedValue == "")
             {
                 MessageBox.Show("You need to add a product with categorie! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
 
             // Image
-            if (textBoxImageURL.Text == null || textBoxImageURL.Text.Length > 0)
+            if (textBoxImageURL.Text == null || textBoxImageURL.Text.Length == 0)
             {
                 MessageBox.Show("You need to add a product with image URL! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
 
             Product product = new Product(textBoxName.Text, textBoxImageURL.Text, textBoxDescription.Text, (int)numericBoxStock.Value, (double)numericBoxPrice.Value, textBoxColor.Text, comboBoxSize.SelectedValue.ToString(), comboBoxCategorie.SelectedValue.ToString(), 1);
 
             try {
-
-                if (ProductId != null)
+                if (ProductId >= 0) 
                 {
-                    // ProductController.UpdateProduct(product);
+                    DialogResult result = MessageBox.Show("¿Are you sure to update the product?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        ProductController.UpdateProduct(ProductId, product, true);
+                    }
                 } else {
-                    ProductController.AddProduct(product);
-
-                    textBoxName.Text = "";
-                    textBoxImageURL.Text = "";
-                    textBoxDescription.Text = "";
-                    numericBoxStock.Value = 0;
-                    numericBoxPrice.Value = 0;
-                    textBoxColor.Text = "";
-                    comboBoxSize.ResetText();
-                    comboBoxCategorie.ResetText();
+                    DialogResult result = MessageBox.Show("¿Are you sure to add the new product?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        ProductController.AddProduct(product);
+                        textBoxName.Text = "";
+                        textBoxImageURL.Text = "";
+                        textBoxDescription.Text = "";
+                        numericBoxStock.Value = 0;
+                        numericBoxPrice.Value = 0;
+                        textBoxColor.Text = "";
+                        comboBoxSize.ResetText();
+                        comboBoxCategorie.ResetText();
+                    }                  
                 }
-                
-
             } catch (Exception ex) {
-                MessageBox.Show("Error adding new product! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error in the product Form! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -153,6 +179,21 @@ namespace ClothesAdmin
         }
 
         private void title_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProductForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelInputs_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBoxName_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -37,3 +37,4 @@ C:\Users\Ruben\source\repos\ClothesAdmin\ClothesAdmin\obj\Debug\ClothesAdmin.pdb
 C:\Users\Ruben\source\repos\ClothesAdmin\ClothesAdmin\obj\Debug\ClothesAdmin.Authentication.resources
 C:\Users\Ruben\source\repos\ClothesAdmin\ClothesAdmin\obj\Debug\ClothesAdmin.MainForm.resources
 C:\Users\Ruben\source\repos\ClothesAdmin\ClothesAdmin\obj\Debug\ClothesAdmin.ProductForm.resources
+C:\Users\Ruben\source\repos\ClothesAdmin\ClothesAdmin\obj\Debug\ClothesAdmin.SaleForm.resources

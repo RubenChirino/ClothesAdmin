@@ -86,6 +86,7 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(171, 22);
             this.textBoxName.TabIndex = 1;
+            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // panelInputs
             // 
@@ -111,6 +112,7 @@
             this.panelInputs.Name = "panelInputs";
             this.panelInputs.Size = new System.Drawing.Size(730, 291);
             this.panelInputs.TabIndex = 2;
+            this.panelInputs.Paint += new System.Windows.Forms.PaintEventHandler(this.panelInputs_Paint);
             // 
             // labelName
             // 
@@ -157,6 +159,11 @@
             // 
             this.numericBoxStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.numericBoxStock.Location = new System.Drawing.Point(43, 210);
+            this.numericBoxStock.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.numericBoxStock.Name = "numericBoxStock";
             this.numericBoxStock.Size = new System.Drawing.Size(171, 22);
             this.numericBoxStock.TabIndex = 7;
@@ -167,6 +174,11 @@
             this.numericBoxPrice.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.numericBoxPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.numericBoxPrice.Location = new System.Drawing.Point(272, 54);
+            this.numericBoxPrice.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.numericBoxPrice.Name = "numericBoxPrice";
             this.numericBoxPrice.Size = new System.Drawing.Size(171, 22);
             this.numericBoxPrice.TabIndex = 9;
@@ -212,6 +224,7 @@
             // 
             // comboBoxSize
             // 
+            this.comboBoxSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.comboBoxSize.FormattingEnabled = true;
             this.comboBoxSize.Location = new System.Drawing.Point(272, 208);
@@ -221,6 +234,7 @@
             // 
             // comboBoxCategorie
             // 
+            this.comboBoxCategorie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.comboBoxCategorie.FormattingEnabled = true;
             this.comboBoxCategorie.Location = new System.Drawing.Point(496, 54);
@@ -296,6 +310,7 @@
             this.Controls.Add(this.panelInputs);
             this.Name = "ProductForm";
             this.Text = "ProductForm";
+            this.Load += new System.EventHandler(this.ProductForm_Load);
             this.navbarPanel.ResumeLayout(false);
             this.navbarPanel.PerformLayout();
             this.panelInputs.ResumeLayout(false);
