@@ -8,6 +8,8 @@ Desktop app about clothes administrator developed with C# using MySQL for DB
 
 [Fashion  Forward.pptx](https://github.com/RubenChirino/ClothesAdmin/files/12268201/Fashion.Forward.pptx)
 
+[Screens diagram](https://www.figma.com/file/yqSDPn97fwNhsnkagmquxC/Diagram---TP?type=whiteboard&node-id=0-1&t=PGU7AHftNBZNfeF0-0)
+
 ### Log In 
 
 <p align="center">
